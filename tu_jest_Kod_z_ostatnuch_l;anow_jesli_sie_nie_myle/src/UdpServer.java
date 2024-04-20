@@ -30,6 +30,7 @@ public class UdpServer {
         // obsluga komunikatu
         data.process();
         server.send_reply(p);
+        // tu jakos inaczej na labach były te catche, ale idk jak to zrobił
       } catch (SocketException ex) {
         Logger.getLogger(UdpServer.class.getName()).log(Level.SEVERE, null, ex);
       } catch (IOException ex) {
